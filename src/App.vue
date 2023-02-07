@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="main">
+    <div style="flex: 1;overflow-y: scroll">
+      <div v-for="i in arr" :key="i.name" style="">
+        {{i.name}}
+      </div>
+    </div>
+    <div class="input">
+      <textarea style="width:100%"></textarea>
+      <button>send</button>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    //Main
+  },
+  data() {
+    return {
+      arr: [{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},{name: 'ssdfsdfsdfsdf'},]
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+<style scoped>
+.main {
+  height: 705px;
+  width: 100%;
+  background-color: #9bbbd4;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 100%;
+  height: 70px;
+  display: flex;
 }
 </style>
